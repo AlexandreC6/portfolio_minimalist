@@ -3,6 +3,7 @@ body {
   box-sizing: border-box;
   overflow-x: hidden;
   font-family: 'Lato', sans-serif;
+  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
 
 .img-background {
@@ -24,13 +25,15 @@ body {
   flex-direction: column;
 
   h1 {
-    font-size: 90px;
+    // font-size: 90px;
+    font-size: $h1-size;
     font-weight: 700;
   }
 
   h3 {
     color: white;
-    font-size: 39px;
+    // font-size: 39px;
+    font-size: $h3-size;
     text-transform: uppercase;
     font-weight: 300;
     position: relative;
@@ -58,6 +61,39 @@ body {
     }
   }
 }
+
+.logo {
+  position: absolute;
+  font-size: 2.0833333333333vw;
+  left:  5.1246537396122vw;
+  top: 0;
+  // width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+
+  ion-icon {
+    color: white;
+    padding-bottom: 8px;
+
+    // Faire la ligne
+    // &:first-child {
+    //   &:before {
+    //     content:'';
+    //     display: block;
+    //     width: 32px;
+    //     height: 2px;
+    //     background-color: #fff;
+    //     transform: rotate(90deg);
+    //     position: absolute;
+    //   }
+    // }
+  }
+}
+
+
 
 .page2 {
   width: 100%;
