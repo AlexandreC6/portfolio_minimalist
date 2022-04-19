@@ -1,0 +1,31 @@
+.navbar-name {
+  position: absolute;
+  width: 100%;
+
+  .name {
+    color: white;
+    font-size: $navbar-size;
+    margin-top: 38px;
+    margin-left: 5.1246537396122vw;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: flex;
+  }
+  .subtitle {
+    display: flex;
+    width: 29.722vw;
+    justify-content: space-between;
+    position: absolute;
+    right: 5.1246537396122vw;
+    color: #989999;
+
+    p {
+      &:hover {
+        color: white;
+        cursor: crosshair;
+        transition: all 0.5s;
+        transform: scale(1.5);
+      }
+    }
+  }
+}
